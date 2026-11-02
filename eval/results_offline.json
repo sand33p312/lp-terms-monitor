@@ -1,0 +1,858 @@
+[
+  {
+    "case": "C01.1",
+    "check": "gold record accepted",
+    "expected": "no errors; escalated=False",
+    "actual": "errors=0; escalated=False",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C01.1",
+    "check": "invented deadline caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": "injected 75 calendar_days"
+  },
+  {
+    "case": "C01.1",
+    "check": "paraphrased quote rejected",
+    "expected": "save blocked",
+    "actual": "save blocked",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C01.1",
+    "check": "re-wrapped quote restored to raw span",
+    "expected": "grounded",
+    "actual": "normalized_whitespace_or_typography",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C01.1",
+    "check": "calendar/business unit swap caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C01.1",
+    "check": "evidence helper locates deadline",
+    "expected": "verified_substring",
+    "actual": "verified_substring",
+    "pass": true,
+    "detail": "1 field(s) unlocated overall"
+  },
+  {
+    "case": "C01.1",
+    "check": "due date, weekends-only default",
+    "expected": "2026-05-30",
+    "actual": "2026-05-30",
+    "pass": true,
+    "detail": "period end 2026-03-31"
+  },
+  {
+    "case": "C02.1",
+    "check": "gold record accepted",
+    "expected": "no errors; escalated=False",
+    "actual": "errors=0; escalated=False",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C02.1",
+    "check": "invented deadline caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": "injected 60 calendar_days"
+  },
+  {
+    "case": "C02.1",
+    "check": "paraphrased quote rejected",
+    "expected": "save blocked",
+    "actual": "save blocked",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C02.1",
+    "check": "re-wrapped quote restored to raw span",
+    "expected": "grounded",
+    "actual": "normalized_whitespace_or_typography",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C02.1",
+    "check": "calendar/business unit swap caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C02.1",
+    "check": "wrong investor caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C02.1",
+    "check": "evidence helper locates deadline",
+    "expected": "verified_substring",
+    "actual": "verified_substring",
+    "pass": true,
+    "detail": "0 field(s) unlocated overall"
+  },
+  {
+    "case": "C02.1",
+    "check": "due date, weekends-only default",
+    "expected": "2026-05-15",
+    "actual": "2026-05-15",
+    "pass": true,
+    "detail": "period end 2026-03-31"
+  },
+  {
+    "case": "C03.1",
+    "check": "gold record accepted",
+    "expected": "no errors; escalated=False",
+    "actual": "errors=0; escalated=False",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C03.1",
+    "check": "invented deadline caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": "injected 75 calendar_days"
+  },
+  {
+    "case": "C03.1",
+    "check": "paraphrased quote rejected",
+    "expected": "save blocked",
+    "actual": "save blocked",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C03.1",
+    "check": "re-wrapped quote restored to raw span",
+    "expected": "grounded",
+    "actual": "normalized_whitespace_or_typography",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C03.1",
+    "check": "calendar/business unit swap caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C03.1",
+    "check": "wrong investor caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C03.1",
+    "check": "evidence helper locates deadline",
+    "expected": "verified_substring",
+    "actual": "verified_substring",
+    "pass": true,
+    "detail": "1 field(s) unlocated overall"
+  },
+  {
+    "case": "C03.1",
+    "check": "due date, weekends-only default",
+    "expected": "2026-05-30",
+    "actual": "2026-05-30",
+    "pass": true,
+    "detail": "period end 2026-03-31"
+  },
+  {
+    "case": "C04.1",
+    "check": "gold record accepted",
+    "expected": "no errors; escalated=False",
+    "actual": "errors=0; escalated=False",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C04.1",
+    "check": "invented deadline caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": "injected 30 calendar_days"
+  },
+  {
+    "case": "C04.1",
+    "check": "paraphrased quote rejected",
+    "expected": "save blocked",
+    "actual": "save blocked",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C04.1",
+    "check": "re-wrapped quote restored to raw span",
+    "expected": "grounded",
+    "actual": "exact_substring",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C04.1",
+    "check": "wrong investor caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C04.1",
+    "check": "evidence helper locates deadline",
+    "expected": "not_explicitly_specified",
+    "actual": "not_explicitly_specified",
+    "pass": true,
+    "detail": "0 field(s) unlocated overall"
+  },
+  {
+    "case": "C05.1",
+    "check": "gold record accepted",
+    "expected": "no errors; escalated=False",
+    "actual": "errors=0; escalated=False",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C05.1",
+    "check": "invented deadline caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": "injected 25 business_days"
+  },
+  {
+    "case": "C05.1",
+    "check": "paraphrased quote rejected",
+    "expected": "save blocked",
+    "actual": "save blocked",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C05.1",
+    "check": "re-wrapped quote restored to raw span",
+    "expected": "grounded",
+    "actual": "normalized_whitespace_or_typography",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C05.1",
+    "check": "calendar/business unit swap caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C05.1",
+    "check": "wrong investor caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C05.1",
+    "check": "evidence helper locates deadline",
+    "expected": "verified_substring",
+    "actual": "verified_substring",
+    "pass": true,
+    "detail": "0 field(s) unlocated overall"
+  },
+  {
+    "case": "C05.1",
+    "check": "due date, weekends-only default",
+    "expected": "2027-01-15",
+    "actual": "2027-01-14",
+    "pass": false,
+    "detail": "period end 2026-12-31"
+  },
+  {
+    "case": "C05.1",
+    "check": "due date, with LPA holiday calendar",
+    "expected": "2027-01-15",
+    "actual": "2027-01-15",
+    "pass": true,
+    "detail": "period end 2026-12-31"
+  },
+  {
+    "case": "C06",
+    "check": "out-of-scope document",
+    "expected": "0 reporting obligations in gold",
+    "actual": "n/a offline (LLM decides)",
+    "pass": null,
+    "detail": "scored in --llm mode"
+  },
+  {
+    "case": "C07.1",
+    "check": "gold record accepted",
+    "expected": "no errors; escalated=False",
+    "actual": "errors=0; escalated=False",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C07.1",
+    "check": "invented deadline caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": "injected 30 business_days"
+  },
+  {
+    "case": "C07.1",
+    "check": "paraphrased quote rejected",
+    "expected": "save blocked",
+    "actual": "save blocked",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C07.1",
+    "check": "re-wrapped quote restored to raw span",
+    "expected": "grounded",
+    "actual": "normalized_whitespace_or_typography",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C07.1",
+    "check": "calendar/business unit swap caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C07.1",
+    "check": "wrong investor caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C07.1",
+    "check": "evidence helper locates deadline",
+    "expected": "verified_substring",
+    "actual": "not_found",
+    "pass": false,
+    "detail": "1 field(s) unlocated overall"
+  },
+  {
+    "case": "C07.1",
+    "check": "due date, weekends-only default",
+    "expected": "2026-04-23",
+    "actual": "2026-04-21",
+    "pass": false,
+    "detail": "period end 2026-03-31"
+  },
+  {
+    "case": "C07.1",
+    "check": "due date, with LPA holiday calendar",
+    "expected": "2026-04-23",
+    "actual": "2026-04-23",
+    "pass": true,
+    "detail": "period end 2026-03-31"
+  },
+  {
+    "case": "C08.1",
+    "check": "gold record accepted",
+    "expected": "no errors; escalated=True",
+    "actual": "errors=0; escalated=True",
+    "pass": true,
+    "detail": "investor LP-G is not named in the cited quote; confirm the clause applies to this investor"
+  },
+  {
+    "case": "C08.1",
+    "check": "invented deadline caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": "injected 60 calendar_days"
+  },
+  {
+    "case": "C08.1",
+    "check": "paraphrased quote rejected",
+    "expected": "save blocked",
+    "actual": "save blocked",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C08.1",
+    "check": "re-wrapped quote restored to raw span",
+    "expected": "grounded",
+    "actual": "normalized_whitespace_or_typography",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C08.1",
+    "check": "calendar/business unit swap caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C08.1",
+    "check": "wrong investor caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C08.1",
+    "check": "evidence helper locates deadline",
+    "expected": "verified_substring",
+    "actual": "verified_substring",
+    "pass": true,
+    "detail": "0 field(s) unlocated overall"
+  },
+  {
+    "case": "C08.1",
+    "check": "due date, weekends-only default",
+    "expected": "2026-08-14",
+    "actual": "2026-08-14",
+    "pass": true,
+    "detail": "period end 2026-06-30"
+  },
+  {
+    "case": "C08.2",
+    "check": "gold record accepted",
+    "expected": "no errors; escalated=True",
+    "actual": "errors=0; escalated=True",
+    "pass": true,
+    "detail": "investor LP-G is not named in the cited quote; confirm the clause applies to this investor"
+  },
+  {
+    "case": "C08.2",
+    "check": "invented deadline caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": "injected 135 calendar_days"
+  },
+  {
+    "case": "C08.2",
+    "check": "paraphrased quote rejected",
+    "expected": "save blocked",
+    "actual": "save blocked",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C08.2",
+    "check": "re-wrapped quote restored to raw span",
+    "expected": "grounded",
+    "actual": "normalized_whitespace_or_typography",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C08.2",
+    "check": "calendar/business unit swap caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C08.2",
+    "check": "wrong investor caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C08.2",
+    "check": "evidence helper locates deadline",
+    "expected": "verified_substring",
+    "actual": "verified_substring",
+    "pass": true,
+    "detail": "0 field(s) unlocated overall"
+  },
+  {
+    "case": "C08.2",
+    "check": "due date, weekends-only default",
+    "expected": "2027-04-30",
+    "actual": "2027-04-30",
+    "pass": true,
+    "detail": "period end 2026-12-31"
+  },
+  {
+    "case": "C09.1",
+    "check": "gold record accepted",
+    "expected": "no errors; escalated=False",
+    "actual": "errors=0; escalated=False",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C09.1",
+    "check": "invented deadline caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": "injected 45 calendar_days"
+  },
+  {
+    "case": "C09.1",
+    "check": "paraphrased quote rejected",
+    "expected": "save blocked",
+    "actual": "save blocked",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C09.1",
+    "check": "re-wrapped quote restored to raw span",
+    "expected": "grounded",
+    "actual": "normalized_whitespace_or_typography",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C09.1",
+    "check": "calendar/business unit swap caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C09.1",
+    "check": "wrong investor caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C09.1",
+    "check": "evidence helper locates deadline",
+    "expected": "verified_substring",
+    "actual": "verified_substring",
+    "pass": true,
+    "detail": "2 field(s) unlocated overall"
+  },
+  {
+    "case": "C10.1",
+    "check": "gold record accepted",
+    "expected": "no errors; escalated=False",
+    "actual": "errors=0; escalated=False",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C10.1",
+    "check": "invented deadline caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": "injected 105 calendar_days"
+  },
+  {
+    "case": "C10.1",
+    "check": "paraphrased quote rejected",
+    "expected": "save blocked",
+    "actual": "save blocked",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C10.1",
+    "check": "re-wrapped quote restored to raw span",
+    "expected": "grounded",
+    "actual": "normalized_whitespace_or_typography",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C10.1",
+    "check": "calendar/business unit swap caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C10.1",
+    "check": "wrong investor caught",
+    "expected": "escalated",
+    "actual": "escalated",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C10.1",
+    "check": "evidence helper locates deadline",
+    "expected": "verified_substring",
+    "actual": "verified_substring",
+    "pass": true,
+    "detail": "1 field(s) unlocated overall"
+  },
+  {
+    "case": "C10.1",
+    "check": "due date, weekends-only default",
+    "expected": "2026-06-29",
+    "actual": "2026-06-29",
+    "pass": true,
+    "detail": "period end 2026-03-31"
+  },
+  {
+    "case": "A01",
+    "check": "deterministic fast path",
+    "expected": "extract",
+    "actual": "extract (fields correct)",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A01",
+    "check": "match against seeded register",
+    "expected": "already_applied",
+    "actual": "already_applied",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A01",
+    "check": "auto-apply blocked",
+    "expected": "False",
+    "actual": "False",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A01",
+    "check": "tampered new value blocked",
+    "expected": "blocked",
+    "actual": "blocked",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A02",
+    "check": "deterministic fast path",
+    "expected": "extract",
+    "actual": "extract (fields correct)",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A02",
+    "check": "match against seeded register",
+    "expected": "already_applied",
+    "actual": "already_applied",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A02",
+    "check": "auto-apply blocked",
+    "expected": "False",
+    "actual": "False",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A02",
+    "check": "tampered new value blocked",
+    "expected": "blocked",
+    "actual": "blocked",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A03",
+    "check": "deterministic fast path",
+    "expected": "extract",
+    "actual": "decline -> LLM fallback",
+    "pass": false,
+    "detail": ""
+  },
+  {
+    "case": "A03",
+    "check": "match against seeded register",
+    "expected": "matched",
+    "actual": "matched",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A03",
+    "check": "auto-apply blocked",
+    "expected": "False",
+    "actual": "False",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A03",
+    "check": "tampered new value blocked",
+    "expected": "blocked",
+    "actual": "blocked",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A04",
+    "check": "deterministic fast path",
+    "expected": "extract",
+    "actual": "extract (fields correct)",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A04",
+    "check": "match against seeded register",
+    "expected": "matched",
+    "actual": "matched",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A04",
+    "check": "auto-apply blocked",
+    "expected": "False",
+    "actual": "False",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A04",
+    "check": "unit-change review note shown",
+    "expected": "note",
+    "actual": "note",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A04",
+    "check": "tampered new value blocked",
+    "expected": "blocked",
+    "actual": "blocked",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A05",
+    "check": "deterministic fast path",
+    "expected": "decline",
+    "actual": "decline -> LLM fallback",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A05",
+    "check": "match against seeded register",
+    "expected": "matched",
+    "actual": "matched",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A05",
+    "check": "auto-apply blocked",
+    "expected": "True",
+    "actual": "True",
+    "pass": true,
+    "detail": "old_value: deadline 75 calendar_days is not stated in the cited source quote (possible invented or computed deadline); new_value: deadline 90 calendar_days is not stated in the cited source quote (possible invented or computed deadline)"
+  },
+  {
+    "case": "A06",
+    "check": "deterministic fast path",
+    "expected": "decline",
+    "actual": "decline -> LLM fallback",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A06",
+    "check": "match against seeded register",
+    "expected": "no_match",
+    "actual": "no_match",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A06",
+    "check": "auto-apply blocked",
+    "expected": "True",
+    "actual": "True",
+    "pass": true,
+    "detail": "change to 'frequency' is not a deadline replacement; manual handling only; old_value must contain an integer value and supported deadline unit; new_value must contain an integer value and supported deadline unit"
+  },
+  {
+    "case": "A07",
+    "check": "deterministic fast path",
+    "expected": "extract",
+    "actual": "extract (fields correct)",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A07",
+    "check": "match against seeded register",
+    "expected": "no_match",
+    "actual": "no_match",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A07",
+    "check": "auto-apply blocked",
+    "expected": "False",
+    "actual": "False",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "A07",
+    "check": "tampered new value blocked",
+    "expected": "blocked",
+    "actual": "blocked",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "case": "C01+C02+C10",
+    "check": "LPA vs side-letter precedence questions flagged",
+    "expected": "LP-A, LP-I",
+    "actual": "LP-A, LP-I",
+    "pass": true,
+    "detail": "same deliverable, different deadline; app flags, human decides"
+  }
+]

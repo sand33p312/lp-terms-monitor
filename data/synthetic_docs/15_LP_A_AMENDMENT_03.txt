@@ -1,0 +1,10 @@
+ABC PRIVATE EQUITY FUND IV
+AMENDMENT NO. 3 TO LP-A SIDE LETTER
+SYNTHETIC TRAINING DOCUMENT — NOT A LEGAL AGREEMENT
+Execution date: 20 May 2026
+Effective date: 1 July 2026
+
+Clause 1 — Amendment to Clause 4.3
+With effect from 1 July 2026, the portfolio exposure schedule referred to in Clause 4.3 of the LP-A Side Letter shall be delivered monthly rather than quarterly. The delivery deadline is not changed.
+
+Note: This changes frequency, not a deadline. The prototype must not apply it automatically.

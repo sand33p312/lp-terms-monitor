@@ -1,0 +1,15 @@
+ABC PRIVATE EQUITY FUND IV — LIMITED PARTNERSHIP AGREEMENT
+SYNTHETIC TRAINING DOCUMENT — NOT A LEGAL AGREEMENT
+Effective date: 1 January 2025
+
+Section 1.1 — Definitions
+"Business Day" means a day other than a Saturday, a Sunday or a public holiday on which banks are open for general business in London, England.
+
+Section 7.1 — Standard quarterly financial statements
+The General Partner shall deliver unaudited quarterly financial statements to each Limited Partner within sixty (60) calendar days following the end of each fiscal quarter.
+
+Section 7.2 — General reporting framework
+The quarterly financial statements shall include fund-level financial information prepared in accordance with the accounting policies adopted by the Fund.
+
+Section 12.4 — Amendments
+Any amendment to this Agreement must be in writing and executed by the parties whose consent is required under this Agreement. This synthetic provision is included for document-processing tests only.

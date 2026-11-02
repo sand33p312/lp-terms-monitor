@@ -1,0 +1,203 @@
+{
+  "description": "Hand-written gold labels for the 17 synthetic documents in data/synthetic_docs. All parties, clauses and dates are fictional. Labels were written by reading each document, not by running the system.",
+  "holiday_calendar": {
+    "name": "England and Wales bank holidays (subset relevant to test windows), per LPA Section 1.1 'Business Day' definition",
+    "dates": ["2026-04-03", "2026-04-06", "2026-05-04", "2026-12-25", "2026-12-28", "2027-01-01"]
+  },
+  "obligation_cases": [
+    {
+      "id": "C01", "document": "00_FUND_IV_LPA.txt", "tests": "Baseline LPA clause that applies to all LPs",
+      "obligations": [{
+        "investor": "All Limited Partners", "fund": "ABC Private Equity Fund IV", "obligation_type": "reporting",
+        "deliverables": ["Unaudited quarterly financial statements"], "frequency": "quarterly",
+        "trigger": "End of each fiscal quarter", "deadline_value": 60, "deadline_unit": "calendar_days",
+        "responsible_party": "General Partner", "conditions": [], "clause_reference": "Section 7.1",
+        "source_quote": "The General Partner shall deliver unaudited quarterly financial statements to each Limited Partner within sixty (60) calendar days following the end of each fiscal quarter.",
+        "expect_escalation": false,
+        "deadline_check": {"period_end": "2026-03-31", "expected_due": "2026-05-30"}
+      }],
+      "expected_excluded_min": 0
+    },
+    {
+      "id": "C02", "document": "01_LP_A_SIDE_LETTER.txt", "tests": "Two deliverables in one sentence",
+      "obligations": [{
+        "investor": "LP-A", "fund": "ABC Private Equity Fund IV", "obligation_type": "reporting",
+        "deliverables": ["Unaudited quarterly financial statements", "Portfolio exposure schedule"], "frequency": "quarterly",
+        "trigger": "End of each fiscal quarter", "deadline_value": 45, "deadline_unit": "calendar_days",
+        "responsible_party": "General Partner", "conditions": [], "clause_reference": "Clause 4.2",
+        "source_quote": "The General Partner shall provide Investor LP-A with unaudited quarterly financial statements and a portfolio exposure schedule within forty-five (45) calendar days following the end of each fiscal quarter.",
+        "expect_escalation": false,
+        "deadline_check": {"period_end": "2026-03-31", "expected_due": "2026-05-15"}
+      }],
+      "expected_excluded_min": 0
+    },
+    {
+      "id": "C03", "document": "02_LP_B_SIDE_LETTER.txt", "tests": "ESG report with a soft condition ('where reasonably available')",
+      "obligations": [{
+        "investor": "LP-B", "fund": "ABC Private Equity Fund IV", "obligation_type": "reporting",
+        "deliverables": ["Quarterly ESG report"], "frequency": "quarterly",
+        "trigger": "End of each fiscal quarter", "deadline_value": 60, "deadline_unit": "calendar_days",
+        "responsible_party": "General Partner", "conditions": ["Portfolio-level emissions information where reasonably available"], "clause_reference": "Clause 3.1",
+        "source_quote": "The General Partner shall provide Investor LP-B with a quarterly ESG report within sixty (60) calendar days following the end of each fiscal quarter.",
+        "expect_escalation": false,
+        "deadline_check": {"period_end": "2026-03-31", "expected_due": "2026-05-30"}
+      }],
+      "expected_excluded_min": 0
+    },
+    {
+      "id": "C04", "document": "03_LP_C_SIDE_LETTER.txt", "tests": "No numeric deadline ('as soon as practicable'); system must not invent one",
+      "obligations": [{
+        "investor": "LP-C", "fund": "ABC Private Equity Fund IV", "obligation_type": "reporting",
+        "deliverables": ["Additional portfolio information"], "frequency": "quarterly",
+        "trigger": "Following the end of each fiscal quarter", "deadline_value": null, "deadline_unit": "unspecified",
+        "responsible_party": "General Partner", "conditions": ["Commercially reasonable efforts"], "clause_reference": "Clause 5.1",
+        "source_quote": "The General Partner shall use commercially reasonable efforts to provide Investor LP-C with additional portfolio information as soon as practicable following the end of each fiscal quarter.",
+        "expect_escalation": false,
+        "deadline_check": null
+      }],
+      "expected_excluded_min": 0
+    },
+    {
+      "id": "C05", "document": "04_LP_D_SIDE_LETTER.txt", "tests": "Business-day deadline across a year-end bank holiday",
+      "obligations": [{
+        "investor": "LP-D", "fund": "ABC Private Equity Fund IV", "obligation_type": "reporting",
+        "deliverables": ["Monthly cash flow statement", "Capital account movement schedule"], "frequency": "monthly",
+        "trigger": "End of each calendar month", "deadline_value": 10, "deadline_unit": "business_days",
+        "responsible_party": "General Partner", "conditions": [], "clause_reference": "Clause 6.1",
+        "source_quote": "The General Partner shall provide Investor LP-D with a monthly cash flow statement and capital account movement schedule within ten (10) business days following the end of each calendar month.",
+        "expect_escalation": false,
+        "deadline_check": {"period_end": "2026-12-31", "expected_due": "2027-01-15"}
+      }],
+      "expected_excluded_min": 0
+    },
+    {
+      "id": "C06", "document": "05_LP_E_SIDE_LETTER.txt", "tests": "Out of scope: event notification, not periodic reporting. Expect zero reporting obligations",
+      "obligations": [],
+      "expected_excluded_min": 1
+    },
+    {
+      "id": "C07", "document": "09_LP_F_SIDE_LETTER.txt", "tests": "Deadline in words only ('fifteen Business Days'), capitalised defined term, crosses Easter",
+      "obligations": [{
+        "investor": "LP-F", "fund": "ABC Private Equity Fund IV", "obligation_type": "reporting",
+        "deliverables": ["Valuation summary for each Portfolio Company"], "frequency": "quarterly",
+        "trigger": "End of each calendar quarter", "deadline_value": 15, "deadline_unit": "business_days",
+        "responsible_party": "General Partner", "conditions": [], "clause_reference": "Clause 2.4",
+        "source_quote": "The General Partner shall deliver to Investor LP-F a valuation summary for each Portfolio Company within fifteen Business Days after the end of each calendar quarter.",
+        "expect_escalation": false,
+        "deadline_check": {"period_end": "2026-03-31", "expected_due": "2026-04-23"}
+      }],
+      "expected_excluded_min": 0
+    },
+    {
+      "id": "C08", "document": "10_LP_G_SIDE_LETTER.txt", "tests": "One clause, two obligations with different frequencies; number in words above 100",
+      "obligations": [{
+        "investor": "LP-G", "fund": "ABC Private Equity Fund IV", "obligation_type": "reporting",
+        "deliverables": ["Capital account statement"], "frequency": "quarterly",
+        "trigger": "End of each fiscal quarter", "deadline_value": 45, "deadline_unit": "calendar_days",
+        "responsible_party": "General Partner", "conditions": [], "clause_reference": "Clause 3.2(a)",
+        "source_quote": "(a) a capital account statement within forty-five (45) calendar days after the end of each fiscal quarter; and",
+        "expect_escalation": true,
+        "escalation_reason": "Investor LP-G is named in the clause lead-in, not in the sub-paragraph quote; the investor check correctly asks for confirmation.",
+        "deadline_check": {"period_end": "2026-06-30", "expected_due": "2026-08-14"}
+      }, {
+        "investor": "LP-G", "fund": "ABC Private Equity Fund IV", "obligation_type": "reporting",
+        "deliverables": ["Audited annual financial statements of the Fund"], "frequency": "annual",
+        "trigger": "End of each fiscal year", "deadline_value": 120, "deadline_unit": "calendar_days",
+        "responsible_party": "General Partner", "conditions": [], "clause_reference": "Clause 3.2(b)",
+        "source_quote": "(b) audited annual financial statements of the Fund within one hundred and twenty (120) calendar days after the end of each fiscal year.",
+        "expect_escalation": true,
+        "escalation_reason": "Same as above: investor named only in the lead-in.",
+        "deadline_check": {"period_end": "2026-12-31", "expected_due": "2027-04-30"}
+      }],
+      "expected_excluded_min": 0
+    },
+    {
+      "id": "C09", "document": "11_LP_H_SIDE_LETTER.txt", "tests": "Distractor clauses (MFN, fee) plus an event-triggered reporting deadline",
+      "obligations": [{
+        "investor": "LP-H", "fund": "ABC Private Equity Fund IV", "obligation_type": "reporting",
+        "deliverables": ["Audited financial statements of each Portfolio Company"], "frequency": "event_driven",
+        "trigger": "General Partner receives the audited financial statements of a Portfolio Company", "deadline_value": 30, "deadline_unit": "calendar_days",
+        "responsible_party": "General Partner", "conditions": [], "clause_reference": "Clause 4.3",
+        "source_quote": "The General Partner shall provide Investor LP-H with a copy of the audited financial statements of each Portfolio Company within thirty (30) calendar days after the General Partner receives those audited financial statements.",
+        "expect_escalation": false,
+        "deadline_check": null
+      }],
+      "expected_excluded_min": 2
+    },
+    {
+      "id": "C10", "document": "12_LP_I_SIDE_LETTER.txt", "tests": "Side letter overrides LPA ('Notwithstanding Section 7.1'); precedence is a legal question",
+      "obligations": [{
+        "investor": "LP-I", "fund": "ABC Private Equity Fund IV", "obligation_type": "reporting",
+        "deliverables": ["Unaudited quarterly financial statements"], "frequency": "quarterly",
+        "trigger": "End of each fiscal quarter", "deadline_value": 90, "deadline_unit": "calendar_days",
+        "responsible_party": "General Partner", "conditions": ["Notwithstanding Section 7.1 of the LPA"], "clause_reference": "Clause 1.3",
+        "source_quote": "Notwithstanding Section 7.1 of the Limited Partnership Agreement, the General Partner shall deliver unaudited quarterly financial statements to Investor LP-I within ninety (90) calendar days following the end of each fiscal quarter.",
+        "expect_escalation": false,
+        "known_gap": "No cross-document conflict check: the register will hold both the LPA 60-day and the LP-I 90-day record without flagging that they cover the same deliverable.",
+        "deadline_check": {"period_end": "2026-03-31", "expected_due": "2026-06-29"}
+      }],
+      "expected_excluded_min": 0
+    }
+  ],
+  "amendment_cases": [
+    {
+      "id": "A01", "document": "06_LP_A_AMENDMENT_01.txt", "tests": "'deleted and replaced with' phrasing; already in seeded register",
+      "investor": "LP-A", "target_clause": "Clause 4.2", "field_name": "deadline",
+      "old_value": {"value": 45, "unit": "calendar_days"}, "new_value": {"value": 30, "unit": "calendar_days"},
+      "effective_date": "2026-01-01",
+      "source_quote": "With effect from 1 January 2026, the reference to \"forty-five (45) calendar days\" in Clause 4.2 of the LP-A Side Letter is deleted and replaced with \"thirty (30) calendar days\".",
+      "expected_fast_path": "extract", "expected_match": "already_applied", "expected_blocked": false
+    },
+    {
+      "id": "A02", "document": "07_LP_B_AMENDMENT_01.txt", "tests": "'changed from X to Y' phrasing; already in seeded register",
+      "investor": "LP-B", "target_clause": "Clause 3.1", "field_name": "deadline",
+      "old_value": {"value": 60, "unit": "calendar_days"}, "new_value": {"value": 75, "unit": "calendar_days"},
+      "effective_date": "2026-01-01",
+      "source_quote": "With effect from 1 January 2026, the deadline in Clause 3.1 of the LP-B Side Letter is changed from sixty (60) calendar days to seventy-five (75) calendar days following the end of each fiscal quarter.",
+      "expected_fast_path": "extract", "expected_match": "already_applied", "expected_blocked": false
+    },
+    {
+      "id": "A03", "document": "08_LP_A_AMENDMENT_02.txt", "tests": "Hard line breaks inside the operative sentence (PDF-style layout)",
+      "investor": "LP-A", "target_clause": "Clause 4.2", "field_name": "deadline",
+      "old_value": {"value": 30, "unit": "calendar_days"}, "new_value": {"value": 25, "unit": "calendar_days"},
+      "effective_date": "2027-01-01",
+      "source_quote": "With effect from 1 January 2027, the reference to \"thirty (30) calendar days\" in Clause 4.2 of the LP-A Side Letter is deleted and replaced with \"twenty-five (25) calendar days\".",
+      "expected_fast_path": "extract", "expected_match": "matched", "expected_blocked": false
+    },
+    {
+      "id": "A04", "document": "13_LP_D_AMENDMENT_01.txt", "tests": "Unit change: business days to calendar days",
+      "investor": "LP-D", "target_clause": "Clause 6.1", "field_name": "deadline",
+      "old_value": {"value": 10, "unit": "business_days"}, "new_value": {"value": 15, "unit": "calendar_days"},
+      "effective_date": "2026-04-01",
+      "source_quote": "With effect from 1 April 2026, the reference to \"ten (10) business days\" in Clause 6.1 of the LP-D Side Letter is deleted and replaced with \"fifteen (15) calendar days\".",
+      "expected_fast_path": "extract", "expected_match": "matched", "expected_blocked": false,
+      "expected_review_note": true
+    },
+    {
+      "id": "A05", "document": "14_LP_B_AMENDMENT_02.txt", "tests": "Relative change ('extended by a further 15 days'); new value is not written in the document",
+      "investor": "LP-B", "target_clause": "Clause 3.1", "field_name": "deadline",
+      "old_value": {"value": 75, "unit": "calendar_days"}, "new_value": {"value": 90, "unit": "calendar_days"},
+      "effective_date": "2026-07-01",
+      "source_quote": "With effect from 1 July 2026, the period for delivery of the quarterly ESG report under Clause 3.1 of the LP-B Side Letter, as previously amended, is extended by a further fifteen (15) calendar days.",
+      "expected_fast_path": "decline", "expected_match": "matched", "expected_blocked": true,
+      "blocked_reason": "Both 75 and 90 are computed, not stated. The design routes computed contractual values to a human instead of letting the model do arithmetic."
+    },
+    {
+      "id": "A06", "document": "15_LP_A_AMENDMENT_03.txt", "tests": "Frequency change, not a deadline change",
+      "investor": "LP-A", "target_clause": "Clause 4.3", "field_name": "frequency",
+      "old_value": "quarterly", "new_value": "monthly",
+      "effective_date": "2026-07-01",
+      "source_quote": "With effect from 1 July 2026, the portfolio exposure schedule referred to in Clause 4.3 of the LP-A Side Letter shall be delivered monthly rather than quarterly.",
+      "expected_fast_path": "decline", "expected_match": "no_match", "expected_blocked": true,
+      "blocked_reason": "Only deadline replacements can be applied automatically; the candidate must be kept for manual handling."
+    },
+    {
+      "id": "A07", "document": "16_LP_J_AMENDMENT_01.txt", "tests": "US date format; amendment for an investor with no record in the register",
+      "investor": "LP-J", "target_clause": "Clause 2.1", "field_name": "deadline",
+      "old_value": {"value": 60, "unit": "calendar_days"}, "new_value": {"value": 45, "unit": "calendar_days"},
+      "effective_date": "2027-01-01",
+      "source_quote": "With effect from January 1, 2027, the deadline in Clause 2.1 of the LP-J Side Letter is changed from sixty (60) calendar days to forty-five (45) calendar days.",
+      "expected_fast_path": "extract", "expected_match": "no_match", "expected_blocked": false
+    }
+  ]
+}

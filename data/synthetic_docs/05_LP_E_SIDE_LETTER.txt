@@ -1,0 +1,10 @@
+ABC PRIVATE EQUITY FUND IV
+SIDE LETTER — INVESTOR LP-E
+SYNTHETIC TRAINING DOCUMENT — NOT A LEGAL AGREEMENT
+Execution date: 2 February 2025
+Effective date: 1 February 2025
+
+Clause 8.1 — Event notification
+The General Partner shall notify Investor LP-E within five (5) business days after the occurrence of a Key Person Event, as defined in the Limited Partnership Agreement.
+
+Note: This is an event-triggered notification provision, not a periodic reporting obligation. It is outside the reporting-only MVP scope.

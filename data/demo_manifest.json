@@ -1,0 +1,111 @@
+{
+  "description": "Synthetic demonstration data for LP Terms Monitor. All entities, clauses and dates are fictional.",
+  "documents": [
+    {"filename": "00_FUND_IV_LPA.txt", "document_type": "lpa", "investor_hint": null},
+    {"filename": "01_LP_A_SIDE_LETTER.txt", "document_type": "side_letter", "investor_hint": "LP-A"},
+    {"filename": "02_LP_B_SIDE_LETTER.txt", "document_type": "side_letter", "investor_hint": "LP-B"},
+    {"filename": "03_LP_C_SIDE_LETTER.txt", "document_type": "side_letter", "investor_hint": "LP-C"},
+    {"filename": "04_LP_D_SIDE_LETTER.txt", "document_type": "side_letter", "investor_hint": "LP-D"},
+    {"filename": "05_LP_E_SIDE_LETTER.txt", "document_type": "side_letter", "investor_hint": "LP-E"},
+    {"filename": "06_LP_A_AMENDMENT_01.txt", "document_type": "amendment", "investor_hint": "LP-A"},
+    {"filename": "07_LP_B_AMENDMENT_01.txt", "document_type": "amendment", "investor_hint": "LP-B"},
+    {"filename": "08_LP_A_AMENDMENT_02.txt", "document_type": "amendment", "investor_hint": "LP-A"},
+    {"filename": "09_LP_F_SIDE_LETTER.txt", "document_type": "side_letter", "investor_hint": "LP-F"},
+    {"filename": "10_LP_G_SIDE_LETTER.txt", "document_type": "side_letter", "investor_hint": "LP-G"},
+    {"filename": "11_LP_H_SIDE_LETTER.txt", "document_type": "side_letter", "investor_hint": "LP-H"},
+    {"filename": "12_LP_I_SIDE_LETTER.txt", "document_type": "side_letter", "investor_hint": "LP-I"},
+    {"filename": "13_LP_D_AMENDMENT_01.txt", "document_type": "amendment", "investor_hint": "LP-D"},
+    {"filename": "14_LP_B_AMENDMENT_02.txt", "document_type": "amendment", "investor_hint": "LP-B"},
+    {"filename": "15_LP_A_AMENDMENT_03.txt", "document_type": "amendment", "investor_hint": "LP-A"},
+    {"filename": "16_LP_J_AMENDMENT_01.txt", "document_type": "amendment", "investor_hint": "LP-J"}
+  ],
+  "obligations": [
+    {
+      "document": "00_FUND_IV_LPA.txt",
+      "status": "approved",
+      "candidate": {
+        "investor": "All Limited Partners", "fund": "ABC Private Equity Fund IV", "obligation_type": "reporting",
+        "deliverables": ["Unaudited quarterly financial statements"],
+        "frequency": "quarterly", "trigger": "End of each fiscal quarter", "deadline_value": 60,
+        "deadline_unit": "calendar_days", "responsible_party": "General Partner", "conditions": [],
+        "effective_from": "2025-01-01", "clause_reference": "Section 7.1",
+        "source_quote": "The General Partner shall deliver unaudited quarterly financial statements to each Limited Partner within sixty (60) calendar days following the end of each fiscal quarter.",
+        "review_reason": "Synthetic seed record for the fund-wide baseline. Side letters that change this deadline for one investor are flagged as precedence questions.", "validation_errors": []
+      }
+    },
+    {
+      "document": "01_LP_A_SIDE_LETTER.txt",
+      "status": "superseded",
+      "candidate": {
+        "investor": "LP-A", "fund": "ABC Private Equity Fund IV", "obligation_type": "reporting",
+        "deliverables": ["Unaudited quarterly financial statements", "Portfolio exposure schedule"],
+        "frequency": "quarterly", "trigger": "End of each fiscal quarter", "deadline_value": 45,
+        "deadline_unit": "calendar_days", "responsible_party": "General Partner", "conditions": ["Portfolio exposure schedule in an agreed spreadsheet format"],
+        "effective_from": "2025-01-01", "clause_reference": "Clause 4.2", 
+        "source_quote": "The General Partner shall provide Investor LP-A with unaudited quarterly financial statements and a portfolio exposure schedule within forty-five (45) calendar days following the end of each fiscal quarter.",
+        "review_reason": "Synthetic seed record; shown as superseded by the later amendment for periods from 2026-01-01.", "validation_errors": []
+      }
+    },
+    {
+      "document": "06_LP_A_AMENDMENT_01.txt",
+      "status": "approved",
+      "candidate": {
+        "investor": "LP-A", "fund": "ABC Private Equity Fund IV", "obligation_type": "reporting",
+        "deliverables": ["Unaudited quarterly financial statements", "Portfolio exposure schedule"],
+        "frequency": "quarterly", "trigger": "End of each fiscal quarter", "deadline_value": 30,
+        "deadline_unit": "calendar_days", "responsible_party": "General Partner", "conditions": ["Portfolio exposure schedule in an agreed spreadsheet format", "Amendment applies from 2026-01-01; legal effect assumed only for this synthetic demo"],
+        "effective_from": "2026-01-01", "clause_reference": "Amendment 1, Clause 1 (amending Side Letter Clause 4.2)",
+        "source_quote": "With effect from 1 January 2026, the reference to \"forty-five (45) calendar days\" in Clause 4.2 of the LP-A Side Letter is deleted and replaced with \"thirty (30) calendar days\". All other terms of Clause 4.2 remain unchanged.",
+        "review_reason": "Synthetic gold-standard record. A real deployment requires authorized confirmation of amendment effect and applicability.", "validation_errors": []
+      }
+    },
+    {
+      "document": "02_LP_B_SIDE_LETTER.txt",
+      "status": "superseded",
+      "candidate": {
+        "investor": "LP-B", "fund": "ABC Private Equity Fund IV", "obligation_type": "reporting",
+        "deliverables": ["Quarterly ESG report"], "frequency": "quarterly", "trigger": "End of each fiscal quarter", "deadline_value": 60,
+        "deadline_unit": "calendar_days", "responsible_party": "General Partner", "conditions": ["Include portfolio-level emissions information where reasonably available"],
+        "effective_from": "2025-01-01", "clause_reference": "Clause 3.1",
+        "source_quote": "The General Partner shall provide Investor LP-B with a quarterly ESG report within sixty (60) calendar days following the end of each fiscal quarter. The report shall include portfolio-level emissions information where such information is reasonably available to the Fund.",
+        "review_reason": "Synthetic seed record; shown as superseded by the later amendment for periods from 2026-01-01.", "validation_errors": []
+      }
+    },
+    {
+      "document": "07_LP_B_AMENDMENT_01.txt",
+      "status": "approved",
+      "candidate": {
+        "investor": "LP-B", "fund": "ABC Private Equity Fund IV", "obligation_type": "reporting",
+        "deliverables": ["Quarterly ESG report"], "frequency": "quarterly", "trigger": "End of each fiscal quarter", "deadline_value": 75,
+        "deadline_unit": "calendar_days", "responsible_party": "General Partner", "conditions": ["Include portfolio-level emissions information where reasonably available", "Amendment applies from 2026-01-01; legal effect assumed only for this synthetic demo"],
+        "effective_from": "2026-01-01", "clause_reference": "Amendment 1, Clause 1 (amending Side Letter Clause 3.1)",
+        "source_quote": "With effect from 1 January 2026, the deadline in Clause 3.1 of the LP-B Side Letter is changed from sixty (60) calendar days to seventy-five (75) calendar days following the end of each fiscal quarter.",
+        "review_reason": "Synthetic gold-standard record. A real deployment requires authorized confirmation of amendment effect and applicability.", "validation_errors": []
+      }
+    },
+    {
+      "document": "03_LP_C_SIDE_LETTER.txt",
+      "status": "needs_review",
+      "candidate": {
+        "investor": "LP-C", "fund": "ABC Private Equity Fund IV", "obligation_type": "reporting",
+        "deliverables": ["Additional portfolio information"], "frequency": "quarterly", "trigger": "Following the end of each fiscal quarter", "deadline_value": null,
+        "deadline_unit": "unspecified", "responsible_party": "General Partner", "conditions": ["Commercially reasonable efforts", "As soon as practicable; no numeric deadline stated"],
+        "effective_from": "2025-01-01", "clause_reference": "Clause 5.1",
+        "source_quote": "The General Partner shall use commercially reasonable efforts to provide Investor LP-C with additional portfolio information as soon as practicable following the end of each fiscal quarter.",
+        "review_reason": "No explicit numeric deadline. Do not infer one; authorized human review is required.", "validation_errors": []
+      }
+    },
+    {
+      "document": "04_LP_D_SIDE_LETTER.txt",
+      "status": "approved",
+      "candidate": {
+        "investor": "LP-D", "fund": "ABC Private Equity Fund IV", "obligation_type": "reporting",
+        "deliverables": ["Monthly cash flow statement", "Capital account movement schedule"], "frequency": "monthly", "trigger": "End of each calendar month", "deadline_value": 10,
+        "deadline_unit": "business_days", "responsible_party": "General Partner", "conditions": ["Business-day calculation in prototype excludes weekends only; holiday calendar not configured"],
+        "effective_from": "2025-01-01", "clause_reference": "Clause 6.1",
+        "source_quote": "The General Partner shall provide Investor LP-D with a monthly cash flow statement and capital account movement schedule within ten (10) business days following the end of each calendar month.",
+        "review_reason": "Synthetic seed record. Confirm contractual business-day counting convention and holiday calendar before production use.", "validation_errors": []
+      }
+    }
+  ]
+}

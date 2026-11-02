@@ -1,0 +1,10 @@
+ABC PRIVATE EQUITY FUND IV
+AMENDMENT NO. 1 TO LP-A SIDE LETTER
+SYNTHETIC TRAINING DOCUMENT — NOT A LEGAL AGREEMENT
+Execution date: 15 December 2025
+Effective date: 1 January 2026
+
+Clause 1 — Amendment to Clause 4.2
+With effect from 1 January 2026, the reference to "forty-five (45) calendar days" in Clause 4.2 of the LP-A Side Letter is deleted and replaced with "thirty (30) calendar days". All other terms of Clause 4.2 remain unchanged.
+
+This amendment is intended to demonstrate change detection. Its legal effect must be confirmed by an authorized reviewer in any real deployment.

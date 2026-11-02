@@ -1,0 +1,10 @@
+ABC PRIVATE EQUITY FUND IV
+AMENDMENT NO. 1 TO LP-B SIDE LETTER
+SYNTHETIC TRAINING DOCUMENT — NOT A LEGAL AGREEMENT
+Execution date: 18 December 2025
+Effective date: 1 January 2026
+
+Clause 1 — Amendment to Clause 3.1
+With effect from 1 January 2026, the deadline in Clause 3.1 of the LP-B Side Letter is changed from sixty (60) calendar days to seventy-five (75) calendar days following the end of each fiscal quarter.
+
+This amendment is intended to demonstrate change detection. Its legal effect must be confirmed by an authorized reviewer in any real deployment.
